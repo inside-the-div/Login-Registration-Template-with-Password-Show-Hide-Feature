@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Sign In/Sign Up</title>
+</head>
+<body>
+    <div class="content">
+        <div class="button-group">
+            <button class="switchSignin btnActive">Sign in</button>
+            <button class="switchSignup">Sign up</button>
+        </div>
+
+        <form action="#" class="signin-form">
+            <div class="input-box">
+                <label for="signinUsername">Username</label>
+                <input type="text" id="signinUsername" required>
+            </div>
+            <div class="input-box">
+                <label for="signinPassword">Password</label>
+                <input type="password" id="signinPassword" required>
+                <span class="passIcon" id="signinPassIcon"><i class="fa-solid fa-eye"></i></span>
+            </div>
+            <div class="check-box">
+                <input type="checkbox" id="signinCheckBox">
+                <label for="signinCheckBox">Remember me</label>
+            </div>
+
+            <input type="submit" value="sign in" id="btn-signin">
+            <hr>
+            <a href="#">Forgot password?</a>
+        </form>
+        <form action="#" class="signup-form display-none">
+            <div class="input-box">
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" required>
+            </div>
+            <div class="input-box">
+                <label for="signupUsername">Username</label>
+                <input type="text" id="signupUsername" required>
+            </div>
+            <div class="input-box">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" required>
+                <span class="passIcon" id="signupPassIcon"><i class="fa-solid fa-eye"></i></span>
+            </div>
+            <div class="check-box">
+                <input type="checkbox" id="signupCheckBox">
+                <label for="signupCheckBox">Remember me</label>
+            </div>
+
+            <input type="submit" value="sign up" id="btn-signup">
+
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

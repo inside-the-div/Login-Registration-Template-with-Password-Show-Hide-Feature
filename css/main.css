@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+/* 
+    body background: rgb(145, 133, 118)
+
+    button font color rgb(255, 255, 255, .7)
+
+    button border color #ff4500
+
+    sign up sign in background rgb(221, 79, 27)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: rgb(145, 133, 118);
+}
+
+.display-block{
+    display: block;
+}
+
+.display-none{
+    display: none;
+}
+
+.content{
+    width: 400px;
+    padding: 40px;
+    background: url("https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_1280.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content::after{
+    content: "";
+    background: rgb(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.button-group{
+    margin-bottom: 30px;
+}
+
+.button-group .switchSignin,
+.button-group .switchSignup{
+    text-transform: uppercase;
+    font-size: 18px;
+    background: transparent;
+    color: rgb(255, 255, 255, .7);
+    padding: 10px 2px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: .5s;
+}
+
+.button-group .switchSignin:hover,
+.button-group .switchSignup:hover{
+    color: rgb(255, 255, 255);
+}
+
+.button-group .btnActive{
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid orangered;
+}
+
+.input-box{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100%;
+    background: rgb(0, 0, 0, .5);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.input-box label,
+.check-box label{
+    color: rgb(255, 255, 255, .7);
+    letter-spacing: 1px;
+}
+
+.check-box{
+    padding-left: 15px;
+}
+
+.check-box label{
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.passIcon{
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 6px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#btn-signin,
+#btn-signup{
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+    width: 100%;
+    border-radius: 20px;
+    background: rgb(221, 79, 27);
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+#btn-signin:hover,
+#btn-signup:hover{
+    background: rgb(214, 60, 4);
+}
+
+.signin-form a{
+    color: rgb(255, 255, 255, .7);
+    font-size: 12px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.signin-form a:hover{
+    color: rgb(221, 79, 27);
+}
+
+.signin-form hr{
+    height: 1px;
+    background: rgb(255, 255, 255, .7);
+    margin-top: 20px;
+}
